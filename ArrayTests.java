@@ -22,4 +22,11 @@ public class ArrayTests {
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{3,2,1}, input1);
 	}
+
+  @Test
+  public void testavg()
+  {
+    double[] array = {1.0,2.0,3.0,4.0,3.0,1.0,1.0};
+    assertEquals(3.0,ArrayExamples.averageWithoutLowest(array),0.001);
+  }
 }
